@@ -6,10 +6,11 @@
         <artifactId>microservices-demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.microservices.demo</groupId>
+
     <artifactId>twitter-to-kafka-service</artifactId>
-    <name>Archetype - twitter-to-kafka-service</name>
+    <name>twitter-to-kafka-service</name>
     <url>http://maven.apache.org</url>
+
     <dependencies>
         <dependency>
             <groupId>com.microservices.demo</groupId>
@@ -29,8 +30,16 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
         <dependency>
             <groupId>org.twitter4j</groupId>
@@ -53,6 +62,8 @@
             <groupId>com.microservices.demo</groupId>
             <artifactId>app-config-data</artifactId>
         </dependency>
+
+
 
     </dependencies>
     <build>
