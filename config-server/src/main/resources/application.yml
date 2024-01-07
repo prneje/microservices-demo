@@ -1,12 +1,18 @@
 server:
   port: 8888
 
+logging:
+  level:
+    ROOT: INFO
+    org.spring.framework.cloud.config: DEBUG
+
 spring:
   application:
     name: configserver
   cloud:
     config:
       server:
+        bootstrap: true
         git:
           uri: https://github.com/prneje/spring-cloud-config-server-repository
           default-label: main
