@@ -39,7 +39,7 @@ public class TwitterElasticIndexClient implements ElasticIndexClient<TwitterInde
         List<IndexQuery> indexQueries = elasticIndexUtil.getIndexQueries(documents);
         List<String> documentIds = elasticsearchOperations.bulkIndex(
                 indexQueries,
-                IndexCoordinates.of(elasticConfigData.getIndexName())
+                IndexCoordinates.of("twitter-index")
         ).stream().map(IndexedObjectInformation::id).collect(Collectors.toList());
         LOG.info("Documents indexed successfully with type: {} and ids: {}", TwitterIndexModel.class.getName(),
                 documentIds);

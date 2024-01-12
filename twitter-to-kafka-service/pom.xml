@@ -62,9 +62,6 @@
             <groupId>com.microservices.demo</groupId>
             <artifactId>app-config-data</artifactId>
         </dependency>
-
-
-
     </dependencies>
     <build>
         <plugins>
