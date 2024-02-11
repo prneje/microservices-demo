@@ -17,7 +17,7 @@ spring:
           uri: https://github.com/prneje/spring-cloud-config-server-repository
           default-label: main
           username: prneje@gmail.com
-          password: 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
+          password: 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
           clone-on-start: true
     fail-fast: true
   security:

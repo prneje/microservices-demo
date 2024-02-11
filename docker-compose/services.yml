@@ -52,7 +52,7 @@ services:
       - "KAFKA-CONFIG_SCHEMA-REGISTRY-URL=http://schema-registry:8081"
       - "SPRING_CLOUD_CONFIG_URI=http://config-server:8888"
       - "ELASTIC-CONFIG_INDEX-NAME=twitter-index"
-      - "ELASTIC-CONFIG_CONNECTION-URL=http://elastic-1:9200"
+      - "ELASTIC-CONFIG_CONNECTION-URL=elastic-1:9200"
       - "ENCRYPT_KEY=${ENCRYPT_KEY}"
     networks:
       - ${GLOBAL_NETWORK:-services}
